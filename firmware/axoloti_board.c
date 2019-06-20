@@ -89,6 +89,8 @@ void adc_configpads(void) {
   palSetPadMode(GPIOC, 4, PAL_MODE_INPUT_ANALOG);
   palSetPadMode(GPIOC, 5, PAL_MODE_INPUT_ANALOG);
   adcStart(&ADCD1, NULL);
+#elif (BOARD_PREENFM2)
+//seb
 #elif (BOARD_AUDIOTHINGIES_P6)
 #else
 #error "ADC: No board defined?"
@@ -135,4 +137,3 @@ void adc_convert(void) {
   adcStopConversion(&ADCD1);
   adcStartConversion(&ADCD1, &adcgrpcfg1, adcvalues, ADC_GRP1_BUF_DEPTH);
 }
-

@@ -30,6 +30,8 @@
 #include "codec_WM8731.h"
 #elif (BOARD_AUDIOTHINGIES_P6)
 #include "codec_CS4354.h"
+#elif (BOARD_PREENFM2)
+#include "codec_CS4354.h" //seb TODO
 #endif
 
 int32_t buf[BUFSIZE*2] __attribute__ ((section (".sram2")));
@@ -54,6 +56,8 @@ void codec_init(void) {
   codec_ADAU1961_hw_init(SAMPLERATE);
 #elif (BOARD_AUDIOTHINGIES_P6)
   codec_CS4354_i2s_init_48k();
+#elif (BOARD_PREENFM2)
+  codec_CS4354_i2s_init_48k(); //seb TODO
 #else
 #error "BOARD_ not defined"
 #endif
@@ -81,4 +85,6 @@ void codec_clearbuffer(void) {
 #include "codec_ADAU1961_SAI.c"
 #elif (BOARD_AUDIOTHINGIES_P6)
 #include "codec_CS4354.c"
+#elif (BOARD_PREENFM2)
+#include "codec_CS4354.c" //seb TODO
 #endif

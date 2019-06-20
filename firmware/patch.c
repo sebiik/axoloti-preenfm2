@@ -93,7 +93,7 @@ void CheckStackOverflow(void) {
       nfree++;
       stk++;
       if (nfree>=STACKSPACE_MARGIN) break;
-    }    
+    }
     if (nfree<STACKSPACE_MARGIN) {
        critical = 1;
        break;
@@ -182,7 +182,7 @@ static msg_t ThreadDSP(void *arg) {
       tStart = hal_lld_get_counter_value();
       watchdog_feed();
       if (patchStatus == RUNNING) { // running
-#if (BOARD_STM32F4DISCOVERY)||(BOARD_AXOLOTI_V03)||(BOARD_AUDIOTHINGIES_P6)
+#if (BOARD_STM32F4DISCOVERY)||(BOARD_AXOLOTI_V03)||(BOARD_AUDIOTHINGIES_P6)||(BOARD_PREENFM2)
           // swap halfwords...
           int i;
           int32_t *p = inbuf;
@@ -193,7 +193,7 @@ static msg_t ThreadDSP(void *arg) {
           }
 #endif
         (patchMeta.fptr_dsp_process)(inbuf, outbuf);
-#if (BOARD_STM32F4DISCOVERY)||(BOARD_AXOLOTI_V03)||(BOARD_AUDIOTHINGIES_P6)
+#if (BOARD_STM32F4DISCOVERY)||(BOARD_AXOLOTI_V03)||(BOARD_AUDIOTHINGIES_P6)||(BOARD_PREENFM2)
         p = outbuf;
         for (i = 0; i < 32; i++) {
           __ASM
@@ -212,7 +212,7 @@ static msg_t ThreadDSP(void *arg) {
         codec_clearbuffer();
       }
 #ifndef BOARD_AUDIOTHINGIES_P6
-      adc_convert();
+      adc_convert(); //seb check if breaks
 #endif
       DspTime = RTT2US(hal_lld_get_counter_value() - tStart);
       dspLoadPct = (100 * DspTime) / (1000000 / 3000);

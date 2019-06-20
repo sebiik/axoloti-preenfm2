@@ -61,7 +61,7 @@ void adc_convert(void);
 #define SW2_PORT GPIOA
 #define SW2_PIN 0
 
-#elif (BOARD_AUDIOTHINGIES_P6)
+#elif (BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2)
 /* TODO: only temporary to see if something is running */
 // led 2 : red
 #define LED2_PORT GPIOC
@@ -73,7 +73,8 @@ void adc_convert(void);
 #endif
 
 
-#ifdef BOARD_AUDIOTHINGIES_P6
+#if ((BOARD_PREENFM2) || (BOARD_AUDIOTHINGIES_P6))
+//seb
 #define SDMIDI SD3
 #else
 #ifdef BOARD_AXOLOTI_V05

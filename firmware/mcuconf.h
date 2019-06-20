@@ -43,7 +43,7 @@
 #define STM32_CLOCK48_REQUIRED              TRUE
 #define STM32_SW                            STM32_SW_PLL
 #define STM32_PLLSRC                        STM32_PLLSRC_HSE
-#ifdef BOARD_AUDIOTHINGIES_P6
+#if ((BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2))
 #define STM32_PLLM_VALUE                    12
 #else
 #define STM32_PLLM_VALUE                    8
@@ -143,8 +143,8 @@
 #define STM32_I2C_USE_I2C1                  TRUE
 #define STM32_I2C_USE_I2C2                  FALSE
 #define STM32_I2C_USE_I2C3                  TRUE
-#elif BOARD_AUDIOTHINGIES_P6
-#define STM32_I2C_USE_I2C1                  TRUE
+#elif (BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2)
+#define STM32_I2C_USE_I2C1                  TRUE //seb check which I2C we need
 #define STM32_I2C_USE_I2C2                  FALSE
 #define STM32_I2C_USE_I2C3                  FALSE
 #else
@@ -205,7 +205,7 @@
 /*
  * SERIAL driver system settings.
  */
-#if BOARD_AUDIOTHINGIES_P6
+#if (BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2)
 #define STM32_SERIAL_USE_USART1             FALSE
 #else
 #define STM32_SERIAL_USE_USART1             TRUE
@@ -244,7 +244,7 @@
 #define STM32_SPI_SPI1_DMA_PRIORITY         1
 #define STM32_SPI_SPI1_IRQ_PRIORITY         10
 
-#if BOARD_AXOLOTI_V05 || BOARD_AUDIOTHINGIES_P6
+#if (BOARD_AXOLOTI_V05) || (BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2)
 #define STM32_SPI_USE_SPI2                  FALSE
 #else
 #define STM32_SPI_USE_SPI2                  TRUE
@@ -310,4 +310,3 @@
  * SDC settings
  */
 #define STM32_SDC_SDIO_DMA_STREAM           STM32_DMA_STREAM_ID(2, 6)
-
