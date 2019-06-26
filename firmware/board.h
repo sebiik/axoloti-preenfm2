@@ -20,7 +20,7 @@
 #include "board_p6.h"
 #endif
 #ifdef BOARD_PREENFM2
-#include "board_p6.h" //seb TODO
+#include "board_preenfm2.h" //seb TODO
 #endif
 #ifndef _BOARD_H_
 #define _BOARD_H_

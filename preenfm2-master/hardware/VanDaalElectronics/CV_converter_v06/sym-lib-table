@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CV_converter_v06-eagle-import)(type Legacy)(uri ${KIPRJMOD}/CV_converter_v06-eagle-import.lib)(options "")(descr ""))
+)

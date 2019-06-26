@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FMSynth)(type Legacy)(uri ${KIPRJMOD}/lib/FMSynth.lib)(options "")(descr ""))
+)

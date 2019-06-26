@@ -1,0 +1,58 @@
+Partlist
+
+Exported from CV_converter_v06.sch at 2019-04-16 13:13
+
+EAGLE Version 9.3.0 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Assembly variant: 
+
+Part         Value          Device               Package      Library           Sheet
+
+5VOUT                       PINHD-1X2            1X02         pinhead           1
+5V_SELECT                   MA03-1               MA03-1       con-lstb          1
+C1           100n           C-EU025-025X050      C025-025X050 resistor          1
+C2           330n           C-EU025-025X050      C025-025X050 resistor          1
+C3           100n           C-EU025-025X050      C025-025X050 resistor          1
+C4           220uF          CPOL-EUE2.5-7        E2,5-7       resistor          1
+C5           100n           C-EU025-025X050      C025-025X050 resistor          1
+C6           220uF          CPOL-EUE2.5-7        E2,5-7       resistor          1
+C9           100n           C-EU025-025X050      C025-025X050 resistor          1
+C10          220uF          CPOL-EUE2.5-7        E2,5-7       resistor          1
+C11          100n           C-EU025-025X050      C025-025X050 resistor          1
+CV_IN                       PINHD-1X6            1X06         pinhead           1
+D2                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D3                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D4                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D5                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D6                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D7                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D8                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D9                          SCHOTTKY-DIODEDO35-7 DO35-7       diode             1
+D10                         DIODE-D-7.5          D-7.5        diode             1
+D11                         DIODE-D-7.5          D-7.5        diode             1
+D12                         DIODE-D-7.5          D-7.5        diode             1
+D13                         DIODE-D-7.5          D-7.5        diode             1
+ENTER_BOOT                  PINHD-1X2            1X02         pinhead           1
+EURORACK_PWR 057-016-1      057-016-1            057-016-1    con-panduit       1
+IC1                         DIL40                DIL40        ic-package        1
+IC2          OPAMP          OPAMP-DUALDIP        DIP08        SparkFun-AnalogIC 1
+IC3          7805           V_REG_78XX-TO-220    TO-220-ALT   SparkFun-PowerIC  1
+IC4                         DIL40                DIL40        ic-package        1
+R1           10k            R-TRIMM64W           RTRIM64W     resistor          1
+R2           10k            R-EU_0207/7          0207/7       rcl               1
+R3           10k            R-EU_0207/7          0207/7       rcl               1
+R4           10k            R-EU_0207/7          0207/7       rcl               1
+R5           10k            R-EU_0207/7          0207/7       rcl               1
+R6           6.8K           R-EU_0207/7          0207/7       rcl               1
+R7           3K             R-EU_0207/7          0207/7       rcl               1
+R8           10k            R-EU_0207/7          0207/7       rcl               1
+R9           10k            R-EU_0207/7          0207/7       rcl               1
+R10          10k            R-EU_0207/7          0207/7       rcl               1
+R11          10k            R-EU_0207/7          0207/7       rcl               1
+R12          6.8K           R-EU_0207/7          0207/7       rcl               1
+R13          3K             R-EU_0207/7          0207/7       rcl               1
+R14          3.3k           R-EU_0207/7          0207/7       rcl               1
+R15          4.7k           R-EU_0207/7          0207/7       rcl               1
+R16          10k            R-EU_0207/7          0207/7       rcl               1
+SWD_DEBUG                   MA05-1               MA05-1       con-lstb          1
+USB_FRONT                   PINHD-1X4            1X04         pinhead           1

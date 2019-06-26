@@ -1,0 +1,33 @@
+Description
+This is a DIY kit to build your tabletop PreenFM2 into Eurorack module.
+Kit comes with all the parts needed to complete the build.
+
+No parts needed to build the PreenFM2, only to make modification to working PreenFM2
+
+*3 different PCBs
+*Front plate
+*Spacers, screws and nuts
+*Connectors
+*Resistors, capacitors and ICs
+*Cable
+
+This kit is suggested to more experienced builders or to them who have enough time.
+Soldering tools and basic mounting tools needed.
+Requires some -desoldering steps.
+
+Step 1.
+Remove 4 connectors from the main board: 1) DC jack 2) USB in 3) Left out jack 4) Right out jack
+
+Step 2.
+Populate the new boards. 3.5 jack connectors should be attached to the panel first.
+
+Step 3.
+Install the PreenFM mainboard to the panel and mount all the other parts.
+
+Step 4.
+Wire the boards together.
+
+Step 5.
+The firmware made by Xavier Hosxe is available at PreenFM github.
+https://github.com/Ixox/preenfm2/releases
+“pfm2_Eurorack_2.09a.zip”
