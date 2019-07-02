@@ -93,7 +93,7 @@ int main(void) {
   halInit();
   chSysInit();
 
-#if ((BOARD_AXOLOTI_V03)||(BOARD_AXOLOTI_V05))
+#if ((BOARD_AXOLOTI_V03) || (BOARD_AXOLOTI_V05) || (BOARD_PREENFM2))
   sdcard_init();
 #endif
   sysmon_init();
@@ -133,13 +133,6 @@ int main(void) {
   palSetPad(GPIOC, 1);
 #endif
 
-// #ifndef BOARD_PREENFM2 //seb check if required
-//   // PC.1 is LCD E on P6
-//   // display SPI CS?
-//   palSetPadMode(GPIOC, 1, PAL_MODE_OUTPUT_PUSHPULL);
-//   palSetPad(GPIOC, 1);
-// #endif
-
   chThdSleepMilliseconds(10);
 
   palSetPadMode(SW2_PORT, SW2_PIN, PAL_MODE_INPUT_PULLDOWN);
@@ -155,6 +148,7 @@ int main(void) {
   midi_init();
   start_dsp_thread();
   codec_init();
+
   if (!palReadPad(SW2_PORT, SW2_PIN)) { // button S2 not pressed
 //    watchdog_init();
     chThdSleepMilliseconds(1);
@@ -178,7 +172,7 @@ int main(void) {
   if (!exception_check()) {
     // only try booting a patch when no exception is to be reported
 
-#if ((BOARD_AXOLOTI_V03)||(BOARD_AXOLOTI_V05))
+#if ((BOARD_AXOLOTI_V03)||(BOARD_AXOLOTI_V05)||(BOARD_PREENFM2))
     sdcard_attemptMountIfUnmounted();
     if (fs_ready && !palReadPad(SW2_PORT, SW2_PIN)){
       // button S2 not pressed

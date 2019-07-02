@@ -67,11 +67,12 @@ static void codec_CS4354_dma_init(void) {
 }
 
 void codec_CS4354_i2s_init_48k(void) {
-  //palSetPadMode(GPIOA, 4, PAL_MODE_OUTPUT_PUSHPULL); //seb commented out just to be sure
-  //palSetPadMode(GPIOA, 4, PAL_MODE_ALTERNATE(6)); /* WS */
-  //palSetPadMode(GPIOB, 3, PAL_MODE_ALTERNATE(6)); /* CLK */
-  //palSetPadMode(GPIOC, 12, PAL_MODE_ALTERNATE(6)); /* SD */
-  //palSetPadMode(GPIOC, 7, PAL_MODE_ALTERNATE(6)); /* MCLK */
+  palSetPadMode(GPIOA, 4, PAL_MODE_OUTPUT_PUSHPULL);
+  palSetPadMode(GPIOA, 4, PAL_MODE_ALTERNATE(6)); /* WS */
+  palSetPadMode(GPIOB, 3, PAL_MODE_ALTERNATE(6)); /* CLK */
+  //palSetPadMode(GPIOC, 12, PAL_MODE_ALTERNATE(6)); /* SD */ //seb: was conflicting with SDIO, is PB5 now
+  palSetPadMode(GPIOB, 5, PAL_MODE_ALTERNATE(6)); /* SD */ //seb PB5 now
+  palSetPadMode(GPIOC, 7, PAL_MODE_ALTERNATE(6)); /* MCLK */
 
 // SPI3 in I2S Mode, Master, MCLK=256*fs
   CODEC_I2S_ENABLE;

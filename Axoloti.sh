@@ -22,17 +22,17 @@ export axoloti_runtime=${axoloti_runtime:="$rootdir"}
 export axoloti_firmware=${axoloti_firmware:="$axoloti_release/firmware"}
 export axoloti_home=${axoloti_home:="$rootdir"}
 
-which java >/dev/null || echo "java not found in path" 
+which java >/dev/null || echo "java not found in path"
 
 if [ -f $rootdir/dist/Axoloti.jar ]
 then
     case "$platform" in
         mac)
-                echo java -Xdock:name=Axoloti -jar $rootdir/dist/Axoloti.jar $* 
+                echo java -Xdock:name=Axoloti -jar $rootdir/dist/Axoloti.jar $*
                 java -Xdock:name=Axoloti -jar $rootdir/dist/Axoloti.jar $* 2>&1 | tee "$axoloti_home/axoloti.log"
         ;;
         linux)
-                echo java -jar $rootdir/dist/Axoloti.jar $* 
+                echo java -jar $rootdir/dist/Axoloti.jar $*
                 java -jar $rootdir/dist/Axoloti.jar $* 2>&1 | tee "$axoloti_home/axoloti.log"
         ;;
     esac

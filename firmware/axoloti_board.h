@@ -61,7 +61,7 @@ void adc_convert(void);
 #define SW2_PORT GPIOA
 #define SW2_PIN 0
 
-#elif (BOARD_AUDIOTHINGIES_P6) || (BOARD_PREENFM2)
+#elif (BOARD_AUDIOTHINGIES_P6)
 /* TODO: only temporary to see if something is running */
 // led 2 : red
 #define LED2_PORT GPIOC
@@ -70,6 +70,13 @@ void adc_convert(void);
 #define SW1_PIN 6 /* S1 */
 #define SW2_PORT GPIOC
 #define SW2_PIN 8 /* S4. S7 would be 9 */
+
+#elif (BOARD_PREENFM2)
+//seb
+#define LED1_PORT GPIOB
+#define LED1_PIN 6
+#define SW2_PORT GPIOC
+#define SW2_PIN 13 /* weak */
 #endif
 
 

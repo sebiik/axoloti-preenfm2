@@ -22,7 +22,7 @@ elif [ -f /etc/debian_version ]; then
     if [ -n "`grep 8.6 /etc/debian_version`" ] && [ -z "`uname -m | grep x86_64`" ]; then
       OS=DebianJessie32bit
     fi
-    
+
 elif [ -f /etc/arch-release ]; then
     OS=Archlinux
 elif [ -f /etc/gentoo-release ]; then

@@ -37,7 +37,7 @@
  * Board voltages.
  * Required for performance limits calculation.
  */
-#define STM32_VDD                   330
+#define STM32_VDD                   300
 
 /*
  * MCU type as defined in the ST header.

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name cs4354-daughterboard)(type Legacy)(uri ${KIPRJMOD}/cs4354-daughterboard.lib)(options "")(descr ""))
+)

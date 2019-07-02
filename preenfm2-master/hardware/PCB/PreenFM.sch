@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PreenFM-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
@@ -598,13 +599,9 @@ Wire Wire Line
 	11150 5950 11150 6250
 Wire Wire Line
 	10650 5950 9800 5950
-Wire Wire Line
-	10450 4400 10450 4500
 Connection ~ 10450 4500
 Wire Wire Line
 	9300 3950 10300 3950
-Wire Wire Line
-	10450 3950 10450 4000
 Connection ~ 10300 3950
 Wire Wire Line
 	10300 6050 9800 6050
@@ -2530,17 +2527,13 @@ Wire Wire Line
 Wire Wire Line
 	3750 9750 4850 9750
 Wire Wire Line
-	12450 6250 12850 6250
+	12450 6250 12600 6250
 Wire Wire Line
-	12450 5000 12850 5000
+	12450 5000 12650 5000
 Wire Wire Line
 	1400 9600 2650 9600
 Wire Wire Line
 	11900 7800 11900 8650
-Wire Wire Line
-	13450 4650 13450 5500
-Wire Wire Line
-	13450 5900 13450 6600
 Wire Wire Line
 	11400 1250 12200 1250
 Wire Wire Line
@@ -2559,4 +2552,40 @@ Wire Wire Line
 	10650 1650 12600 1650
 Wire Wire Line
 	6550 1050 6550 3100
+Wire Wire Line
+	13950 6300 14000 6300
+Wire Wire Line
+	14300 6300 14350 6300
+Connection ~ 14350 6300
+Wire Wire Line
+	13950 5050 14000 5050
+Wire Wire Line
+	14300 5050 14350 5050
+Connection ~ 14350 5050
+Connection ~ 12650 5000
+Wire Wire Line
+	12650 5000 12850 5000
+Connection ~ 12600 6250
+Wire Wire Line
+	12600 6250 12850 6250
+Connection ~ 11950 6250
+Wire Wire Line
+	10450 4350 10450 4500
+Wire Wire Line
+	10450 3950 10450 4050
+Wire Wire Line
+	10450 5750 10450 5800
+Wire Wire Line
+	10450 6100 10450 6150
+Connection ~ 10450 6150
+Wire Wire Line
+	13450 4650 13450 5050
+Wire Wire Line
+	13450 5900 13450 6300
+Connection ~ 13450 6300
+Wire Wire Line
+	13450 6300 13450 6600
+Connection ~ 13450 5050
+Wire Wire Line
+	13450 5050 13450 5500
 $EndSCHEMATC
