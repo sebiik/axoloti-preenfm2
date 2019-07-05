@@ -2588,4 +2588,7 @@ Wire Wire Line
 Connection ~ 13450 5050
 Wire Wire Line
 	13450 5050 13450 5500
+Connection ~ 11100 4700
+NoConn ~ 9750 4800
+NoConn ~ 9800 6450
 $EndSCHEMATC

@@ -31,7 +31,8 @@
 #elif (BOARD_AUDIOTHINGIES_P6)
 #include "codec_CS4354.h"
 #elif (BOARD_PREENFM2)
-#include "codec_CS4354.h" //seb TODO
+//#include "codec_PT8211.h"
+#include "codec_CS4354.h"
 #endif
 
 int32_t buf[BUFSIZE*2] __attribute__ ((section (".sram2")));
@@ -57,7 +58,8 @@ void codec_init(void) {
 #elif (BOARD_AUDIOTHINGIES_P6)
   codec_CS4354_i2s_init_48k();
 #elif (BOARD_PREENFM2)
-  codec_CS4354_i2s_init_48k(); //seb TODO
+  //codec_PT8211_i2s_init_48k();
+  codec_CS4354_i2s_init_48k();
 #else
 #error "BOARD_ not defined"
 #endif
@@ -86,5 +88,6 @@ void codec_clearbuffer(void) {
 #elif (BOARD_AUDIOTHINGIES_P6)
 #include "codec_CS4354.c"
 #elif (BOARD_PREENFM2)
-#include "codec_CS4354.c" //seb TODO
+//#include "codec_PT8211.c"
+#include "codec_CS4354.c"
 #endif

@@ -1,0 +1,16 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"R6,R5,R4,R3";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";4;"DNP";;;
+2;"H2,H1";"MountingHole_2.5mm";2;"MountingHole";;;
+3;"C4,C1";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"100nF";;;
+4;"R2,R1";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"470R";;;
+5;"C6,C5,C3,C2";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";4;"2.2uF";;;
+6;"C8,C7";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"2.2nF";;;
+7;"U1";"SOIC-14_3.9x8.7mm_P1.27mm";1;"CS4354";;;
+8;"J8";"PinHeader_1x01_P2.54mm_Vertical";1;"5VA";;;
+9;"GND1";"PinHeader_1x01_P2.54mm_Vertical";1;"GND";;;
+10;"B_GND_A1";"PinHeader_1x04_P2.54mm_Vertical";1;"L  GND  R";;;
+11;"SCK1";"PinHeader_1x01_P2.54mm_Vertical";1;"SCK";;;
+12;"LRCK1";"PinHeader_1x01_P2.54mm_Vertical";1;"LRCK";;;
+13;"MCK1";"PinHeader_1x01_P2.54mm_Vertical";1;"MCK";;;
+14;"SDI1";"PinHeader_1x01_P2.54mm_Vertical";1;"SDI";;;
+15;"3V3";"PinHeader_1x01_P2.54mm_Vertical";1;"3V3";;;
