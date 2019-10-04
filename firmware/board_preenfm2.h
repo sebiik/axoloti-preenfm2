@@ -381,8 +381,8 @@
  * PC14 - PIN14                     (input pullup).
  * PC15 - PIN15                     (input pullup).
  */
-#define VAL_GPIOC_MODER             (PIN_MODE_OUTPUT(GPIOC_RS) |            \
-                                     PIN_MODE_OUTPUT(GPIOC_E) |             \
+ #define VAL_GPIOC_MODER             (PIN_MODE_ALTERNATE(GPIOC_RS) |       \
+                                      PIN_MODE_INPUT(GPIOC_E) |           \
                                      PIN_MODE_OUTPUT(GPIOC_LED1) |          \
                                      PIN_MODE_INPUT(GPIOC_PIN3) |           \
                                      PIN_MODE_INPUT(GPIOC_PIN4) |           \

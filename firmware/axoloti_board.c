@@ -90,7 +90,11 @@ void adc_configpads(void) {
   palSetPadMode(GPIOC, 5, PAL_MODE_INPUT_ANALOG);
   adcStart(&ADCD1, NULL);
 #elif (BOARD_PREENFM2)
-//seb
+//seb: Four analog input pins header on the PCB (P405 pins 22,23...)
+  palSetPadMode(GPIOC, 0, PAL_MODE_INPUT_ANALOG);
+  palSetPadMode(GPIOC, 1, PAL_MODE_INPUT_ANALOG);
+  palSetPadMode(GPIOC, 2, PAL_MODE_INPUT_ANALOG);
+  palSetPadMode(GPIOC, 3, PAL_MODE_INPUT_ANALOG);
 #elif (BOARD_AUDIOTHINGIES_P6)
 #else
 #error "ADC: No board defined?"
